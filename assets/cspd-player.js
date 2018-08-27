@@ -261,3 +261,59 @@ function audio_vol_fun(event) {
   audio_id.volume = calculated_vol;
 }
 
+
+
+
+
+
+function cspd_change_music(music)
+{
+
+  audio_id.pause();
+  audio_id.setAttribute('src', music);
+  audio_id.load();
+  //videocontainer.setAttribute('poster', newposter); //Changes video poster image
+  audio_id.play();
+
+
+
+
+
+                  try {
+                      
+             var measuredTime = new Date(null);
+             measuredTime.setSeconds(audio_id.duration); // specify value of SECONDS
+             var MHSTime = measuredTime.toISOString().substr(11, 8);
+             // document.getElementById("cs_audio_duration").innerHTML = MHSTime;
+
+             var a = MHSTime.split(':'); // split it at the colons
+
+             // Hours are worth 60 minutes.
+             var minutes = (+a[0]) * 60 + (+a[1]);
+             // console.log(minutes + ":" + ((+a[2]) % 60));
+             document.getElementById("cs_audio_duration").innerHTML =  minutes+":"+((+a[2]) % 60);
+
+
+                  }
+                  catch(err) {
+                      audio_id.addEventListener('loadedmetadata', function() {
+    
+                           var measuredTime = new Date(null);
+                           measuredTime.setSeconds(audio_id.duration); // specify value of SECONDS
+                           var MHSTime = measuredTime.toISOString().substr(11, 8);
+                           document.getElementById("cs_audio_duration").innerHTML = MHSTime;
+
+                           var a = MHSTime.split(':'); // split it at the colons
+
+                           // Hours are worth 60 minutes.
+                           var minutes = (+a[0]) * 60 + (+a[1]);
+                           // console.log(minutes + ":" + ((+a[2]) % 60));
+                           document.getElementById("cs_audio_duration").innerHTML = minutes+":"+((+a[2]) % 60);
+ 
+                      });
+                  }
+
+
+}
+
+
