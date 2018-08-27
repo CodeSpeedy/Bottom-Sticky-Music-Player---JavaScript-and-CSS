@@ -11,4 +11,6 @@ Below is how keyword work:
 - Left arrow and right arrow to backward and forward the music with playing progress bar.
 - Up arrow key and down arrow key to control the music volume. Up arrow key will increase the volume and down arrow key will decrease the volume.
 
+Also, another great feature of this project is that, you can easily place any of your music on your web page. Clicking on it will play the music on the bottom sticky music player. The JavaScript file already contain the function for this purpose.
+
 To see how to use and customize it, visit the [documentation post on CodeSpeedy](https://www.codespeedy.com/bottom-sticky-music-player-javascript-css/).
