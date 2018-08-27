@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title></title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/cspd-player.css">
+	<style type="text/css">
+
+
+		/*Product and Music details*/
+
+		.product_details {
+			padding: 12px;
+			margin-bottom: 22px;
+		}
+
+
+		p, li{
+           font-size: 1.3em;
+		}
+
+
+		.product_details p, .product_details li{
+           font-size: 1.3em; font-weight: 600;
+		}
+
+
+	</style>
+
+
+
+
+</head>
+<body>
+
+
+<div class="product_details">
+  <h1>Bottom Sticky Music Player by <a href="https://www.codespeedy.com/">CodeSpeedy</a></h1>
+  <p>Bottom sticky music player by CodeSpeedy is a simple and easy to use music player. This player will always be fixed in the bottom.</p>
+  <p>Play/Pause, volume control, changing music play bar can be done easily just by keys. Yes, the music can be easily controlled by the key.</p>
+  <p>Below is how keyword work:</p>
+  <li>Space key to play and pause music.</li>
+  <li>Left arrow and right arrow to backward and forward the music with playing progress bar.</li>
+  <li>Up arrow key and down arrow key to control the music volume. Up arrow key will increase the volume and down arrow key will decrease the volume.</li>
+
+  <p>You can test with the key now.</p>
+</div>
+<hr>
+
+
+<div class="music_details">
+<h2>About the music used on for this product</h2>
+<p><strong>Track Name:</strong> Roll On / Length: 2:26 / Status: 1-credit</p>
+<p><strong>Composer:</strong> Noisy Oyster</p>
+<p><strong>Description:</strong> Bright and cheerful power pop music which will energize your videos with a lighthearted, upbeat attitude. With lots of jingle-jangle guitar strumming and picking, this music may remind some of the carefree surf music of the 1960s...</p>
+<p><a href="https://www.freesoundtrackmusic.com/music_listing_noisyoyster.html">More music by Noisy Oyster</a></p>
+</div>
+<br><br><br><br>
+
+
+
+
+
+
+<audio id="cs_audio" controls>
+  <source src="assets/roll_on-noisy_oyster_CLIP.mp3" type="audio/mpeg">
+</audio>
+
+
+<div style="text-align: center;">
+
+<div id="cs_audioplayer">
+
+     <span style="position: relative;left: 0;float: left;font-size: 0.87em;"><span id="cs_audio_current_time">0:0</span></span>
+
+     <span id="cs_play_pause_btn" style="position: relative;">
+         <i class="far fa-play-circle" id="cs_audio_play"></i>
+         <i class="far fa-pause-circle" id="cs_audio_pause"></i>
+     </span>
+
+     <span id="cs_audio_sound" style="position: relative;right: 5px;float: right;margin-left: 15px;top: -2px;">
+         <i style="vertical-align: middle;font-size: 1.14em;" class="fas fa-volume-down"></i>
+         <div class="cs_volBar" style="height: 6px; width: 65px;background-color: #ccc;display: inline-block;cursor: pointer;">
+           <div class="cs_volume" style="height: 6px;width: 28px;background-color: red;position: absolute;"></div>
+         </div>
+
+     </span>
+     <span id="cs_audio_duration" style="position: relative;right: 0;float: right;padding-left: 10px;font-size: 0.87em;"></span>
+
+     <div class="cs_audio_bar">
+         <div class="cs_audio_bar_now"></div>
+         <div class="cs_audio_bar_loaded"></div>
+     </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/cspd-player.js"></script>
+
+</body>
+</html>
