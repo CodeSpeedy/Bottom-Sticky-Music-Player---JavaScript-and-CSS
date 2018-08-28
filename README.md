@@ -14,3 +14,5 @@ Below is how keyword work:
 Also, another great feature of this project is that, you can easily place any of your music on your web page. Clicking on it will play the music on the bottom sticky music player. The JavaScript file already contain the function for this purpose.
 
 To see how to use and customize it, visit the [documentation post on CodeSpeedy](https://www.codespeedy.com/bottom-sticky-music-player-javascript-css/).
+
+This is just the beginning of this project and I want to take this project to the next level. You can [donate us](https://www.paypal.me/codespeedy) so that we can continue develop and modify this project.
